@@ -1,4 +1,5 @@
 apm install atom-beautify
+apm install atom-bootstrap3
 apm install atom-jinja2
 apm install auto-detect-indentation
 apm install auto-indent
@@ -10,7 +11,11 @@ apm install indent-guide-improved
 apm install language-groovy
 apm install language-salt
 apm install linter
+apm install linter-bootlint
+apm install linter-csslint
+apm install linter-htmlhint
 apm install linter-js-yaml
+apm install linter-jslint
 apm install linter-pep8
 apm install linter-pydocstyle
 apm install linter-pylint
@@ -23,5 +28,6 @@ apm install multi-cursor-plus
 apm install open-recent
 apm install pigments
 apm install seti-ui
+apm install simple-drag-drop-text
 apm install tabs-to-spaces
 apm install todo-show
