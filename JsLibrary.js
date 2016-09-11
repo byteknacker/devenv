@@ -1,0 +1,34 @@
+// Simple and reusable `bind` helper
+// Put a function and object where the object will be the call-site of
+// the function and will become the this. This is hard bound.
+function bind(fn, obj) {
+    return function() {
+        return fn.apply( obj, arguments );
+    };
+}
+
+/* Example code and reference:
+
+ function foo(something) {
+    console.log( this.a, something );
+    return this.a + something;
+ }
+
+ // simple `bind` helper
+ function bind(fn, obj) {
+    return function() {
+        return fn.apply( obj, arguments );
+    };
+ }
+
+ var obj = {
+    a: 2
+ };
+
+ var bar = bind( foo, obj );
+
+ var b = bar( 3 ); // 2 3
+ console.log( b ); // 5
+
+From "You Don't Know JS: this & Object Prototypes"
+ */
